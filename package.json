@@ -1,0 +1,30 @@
+{
+  "name": "swan-station",
+  "version": "1.0.0",
+  "description": "You have to call the function button within a designated time or a function will be called.",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reminyborg/swan-station.git"
+  },
+  "keywords": [
+    "timeout",
+    "function",
+    "call",
+    "lost",
+    "swan-station"
+  ],
+  "author": "Remi Nyborg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/reminyborg/swan-station/issues"
+  },
+  "homepage": "https://github.com/reminyborg/swan-station#readme",
+  "devDependencies": {
+    "standard": "^3.0.0",
+    "tape": "^4.2.0"
+  }
+}
