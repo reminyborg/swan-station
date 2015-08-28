@@ -12,11 +12,19 @@ Yes this is a silly silly name... But it is [thematic](http://lostpedia.wikia.co
 var swanStation = require('swan-station')
 
 var initiateMeltdown = function(){ console.log('Meltdown!') }
-var button = swanStation({ time: 1000 * 60 * 108, call: initiateMeltdown })
+var button = swanStation({ time: 1000 * 60 * 108, call: initiateMeltdown, reset: false })
+// if reset is set to true the countdown will reset on meltdown forever until destroy is manually called
 
-// call this button every 108 minutes or meltdown will be initiated
+// call this button at least every 108 minutes or meltdown will be initiated
 button()
 
-// to destroy the button
+// to manually destroy the button
 button.destroy()
+```
+
+## install
+with npm do:
+
+```
+npm install --save swan-station
 ```
