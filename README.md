@@ -9,7 +9,8 @@ Yes this is a silly silly name... But it is [thematic](http://lostpedia.wikia.co
 ```javacript
 var swanStation = require('swan-station')
 
-var button = swanStation({ time: 1000 * 60 * 1, call: function(){ console.log('Meltdown!') } })
+var initiateMeltdown = function(){ console.log('Meltdown!') }
+var button = swanStation({ time: 1000 * 60 * 1, call: initiateMeltdown })
 
 // call this button every minute or Meltdown! will be initiated
 button()
